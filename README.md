@@ -359,52 +359,6 @@ APP_PASSWORD = <your-app-password>
 npm run dev
 ```
 
-### Docker Deployment
-
-1. **Create docker-compose.yml**
-   ```yaml
-version: '3'
-
-services:
-  backend:
-    build:
-      context: .
-      dockerfile: Dockerfile.backend
-      args:
-        PORT: 8000
-        CORS_ORIGIN: "*"
-           MONGODB_URI: "mongodb+srv://<username>:<password>@cluster0.<project>.mongodb.net"
-        CLOUDINARY_CLOUD_NAME: "<your-cloudinary-cloud-name>"
-        CLOUDINARY_API_KEY: "<your-cloudinary-api-key>"
-           CLOUDINARY_API_SECRET: "<your-cloudinary-api-secret>"
-        GOOGLE_CLIENT_ID: "<your-google-client-id>"
-        GOOGLE_CLIENT_SECRET: "<your-google-client-secret>"
-        GOOGLE_CALLBACK_URL: "http://localhost:8000/auth/google/callback"
-        JWT_SECRET: "<your-jwt-secret>"
-    ports:
-      - "8000:8000"
-
-  frontend:
-    build:
-      context: .
-      dockerfile: Dockerfile.frontend
-      args:
-        VITE_LOCALHOST: "http://localhost:8000"
-           VITE_SERVER_URL: "<your-deployment-link>"
-    ports:
-      - "5173:5173"
-```
-
-2. **Run with Docker**
-```bash
-sudo docker-compose up
-```
-
-3. **Clean up**
-```bash
-sudo docker-compose down --rmi all
-```
-
 ## 🔑 Environment Variables
 
 ### Frontend (.env)
