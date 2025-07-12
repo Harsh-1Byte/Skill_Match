@@ -1,0 +1,139 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, var(--cream) 0%, var(--spearmint) 100%);
+  min-height: 100vh;
+  min-width: 70vw;
+  color: var(--dark-text);
+}
+
+.form-container h1 {
+  padding: 3rem;
+  text-align: center;
+  color: var(--hot-pink) !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box {
+  background: linear-gradient(145deg, var(--cream) 0%, white 100%);
+  padding: 1rem;
+  min-width: 70vw;
+  margin: 5rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--hot-pink);
+  box-shadow: 0 10px 30px rgba(239, 124, 142, 0.2);
+}
+
+.question {
+  color: var(--hot-pink) !important;
+  margin-bottom: 0.6rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.form-group label {
+  color: var(--dark-text);
+}
+
+.form-control {
+  background-color: var(--cream);
+  border: 1px solid var(--rosewater);
+  border-radius: 5px;
+  padding: 10px;
+  width: 70%;
+  margin-bottom: 20px;
+  color: var(--dark-text);
+}
+
+.form-control::placeholder {
+  color: var(--medium-text) !important;
+}
+
+.radio-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.radio-group input[type="radio"] {
+  margin: 0.3rem;
+  margin-left: 1rem;
+}
+
+.radio-group label {
+  color: var(--medium-text);
+  margin-left: 0.5rem;
+}
+
+.textarea-control {
+  height: 150px;
+}
+
+.submit-button {
+  background: linear-gradient(45deg, var(--hot-pink) 0%, var(--rosewater) 100%);
+  color: var(--cream);
+  border: 2px solid var(--hot-pink);
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background: linear-gradient(45deg, var(--rosewater) 0%, var(--hot-pink) 100%);
+  color: var(--cream);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(239, 124, 142, 0.4);
+}
+
+/* Ensure all text elements have proper contrast */
+.form-container h1, 
+.form-container h2, 
+.form-container h3, 
+.form-container h4, 
+.form-container h5, 
+.form-container h6 {
+  color: var(--dark-text);
+  font-weight: 600;
+}
+
+.form-container p, 
+.form-container span, 
+.form-container div {
+  color: var(--medium-text);
+}
+
+.form-box h1, 
+.form-box h2, 
+.form-box h3, 
+.form-box h4, 
+.form-box h5, 
+.form-box h6 {
+  color: var(--dark-text);
+  font-weight: 600;
+}
+
+.form-box p, 
+.form-box span, 
+.form-box div {
+  color: var(--medium-text);
+}
+
+@media (max-width: 768px) {
+  .submitButton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

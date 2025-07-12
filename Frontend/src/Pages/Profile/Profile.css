@@ -1,0 +1,234 @@
+/* ProfilePage.css */
+
+.left-div {
+  display: flex;
+}
+
+.profile-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.profile-container {
+  font-family: "Montserrat", sans-serif;
+  color: var(--grey);
+  padding: 20px;
+  background: linear-gradient(135deg, var(--cream) 0%, var(--spearmint) 100%);
+}
+
+.profile-photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid var(--hot-pink);
+  box-shadow: 0 5px 15px rgba(239, 124, 142, 0.3);
+}
+
+.profile-name {
+  font-size: 2rem !important;
+  margin-top: 10px;
+  color: var(--hot-pink);
+  font-weight: bold;
+}
+
+.rating {
+  margin-top: 10px;
+}
+
+.rating-stars {
+  font-size: 24px;
+  color: var(--rosewater);
+}
+
+.rating-value {
+  margin-left: 5px;
+  color: var(--grey);
+  font-weight: 600;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.connect-button {
+  padding: 10px 20px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+  border: 2px solid var(--hot-pink);
+  border-radius: 25px;
+  background: linear-gradient(45deg, var(--hot-pink) 0%, var(--rosewater) 100%);
+  color: var(--cream);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.connect-button:hover {
+  background: linear-gradient(45deg, var(--rosewater) 0%, var(--hot-pink) 100%);
+  color: var(--cream);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(239, 124, 142, 0.4);
+}
+
+.report-button {
+  padding: 10px 20px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+  border: 2px solid var(--rosewater);
+  border-radius: 25px;
+  background: linear-gradient(45deg, var(--rosewater) 0%, var(--hot-pink) 100%);
+  color: var(--cream);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.report-button:hover {
+  background: linear-gradient(45deg, var(--hot-pink) 0%, var(--rosewater) 100%);
+  color: var(--cream);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(239, 124, 142, 0.4);
+}
+
+.edit-links {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+}
+
+.edit-button {
+  padding: 10px 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid var(--spearmint);
+  border-radius: 25px;
+  background: linear-gradient(45deg, var(--spearmint) 0%, var(--rosewater) 100%);
+  color: var(--grey);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.edit-button:hover {
+  background: linear-gradient(45deg, var(--rosewater) 0%, var(--spearmint) 100%);
+  color: var(--grey);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(239, 124, 142, 0.4);
+}
+
+h2 {
+  color: var(--hot-pink) !important;
+  font-weight: bold;
+}
+
+.bio {
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  color: var(--grey);
+  line-height: 1.6;
+}
+
+.portfolio-links {
+  margin-top: 1rem;
+  display: flex;
+  margin-bottom: 3rem;
+  min-width: 15rem;
+  justify-content: space-between;
+}
+
+.link {
+  width: 50px;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  transform: scale(1.1);
+}
+
+.portfolio-link {
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-link:hover {
+  opacity: 1;
+}
+
+.skill-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.skill-box {
+  background: linear-gradient(45deg, var(--hot-pink) 0%, var(--rosewater) 100%);
+  color: var(--cream);
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.education-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.project-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+/* Ensure all text elements have proper contrast */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-text);
+  font-weight: 600;
+}
+
+p, span, div {
+  color: var(--medium-text);
+}
+
+@media (max-width: 768px) {
+  .left-div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .edit-button {
+    margin-left: 0;
+  }
+
+  .profile-box,
+  .profile-container {
+    padding: 0.5rem;
+  }
+
+  .connect-button,
+  .report-button {
+    margin-left: 0;
+  }
+
+  .misc {
+    text-align: center;
+  }
+}

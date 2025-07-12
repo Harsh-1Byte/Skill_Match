@@ -1,0 +1,121 @@
+.rating-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--secfont);
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  min-width: 100vw;
+  min-height: 90vh;
+  background: linear-gradient(135deg, var(--cream) 0%, var(--spearmint) 100%);
+  color: var(--dark-text);
+}
+
+.inner-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(145deg, var(--cream) 0%, white 100%);
+  padding: 4rem;
+  border-radius: 1rem;
+  min-width: 60vw;
+  border: 2px solid var(--hot-pink);
+  box-shadow: 0 10px 30px rgba(239, 124, 142, 0.2);
+}
+
+.star-rating {
+  font-size: 30px;
+}
+
+.star {
+  cursor: pointer;
+  color: var(--light-grey);
+}
+
+.star.filled {
+  color: var(--hot-pink);
+}
+
+.review-input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid var(--rosewater);
+  border-radius: 5px;
+  background-color: var(--cream);
+  color: var(--dark-text);
+}
+
+.submit-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, var(--hot-pink) 0%, var(--rosewater) 100%);
+  color: var(--cream);
+  border: 2px solid var(--hot-pink);
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background: linear-gradient(45deg, var(--rosewater) 0%, var(--hot-pink) 100%);
+  color: var(--cream);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(239, 124, 142, 0.4);
+}
+
+/* Ensure all text elements have proper contrast */
+.rating-form-container h1, 
+.rating-form-container h2, 
+.rating-form-container h3, 
+.rating-form-container h4, 
+.rating-form-container h5, 
+.rating-form-container h6 {
+  color: var(--dark-text);
+  font-weight: 600;
+}
+
+.rating-form-container p, 
+.rating-form-container span, 
+.rating-form-container div {
+  color: var(--medium-text);
+}
+
+.inner-container h1, 
+.inner-container h2, 
+.inner-container h3, 
+.inner-container h4, 
+.inner-container h5, 
+.inner-container h6 {
+  color: var(--dark-text);
+  font-weight: 600;
+}
+
+.inner-container p, 
+.inner-container span, 
+.inner-container div {
+  color: var(--medium-text);
+}
+
+@media (max-width: 768px) {
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rating-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .star-rating {
+    display: flex;
+    justify-content: center;
+  }
+}

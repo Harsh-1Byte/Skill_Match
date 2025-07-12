@@ -1,0 +1,99 @@
+.register_page {
+  min-height: 80vh;
+  background: linear-gradient(135deg, var(--cream) 0%, var(--spearmint) 100%);
+  font-family: Montserrat;
+  color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register_section {
+  background: linear-gradient(145deg, var(--cream) 0%, white 100%);
+  color: var(--grey);
+  min-height: 80vh;
+  width: 50%;
+  border: 2px solid var(--hot-pink);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(239, 124, 142, 0.2);
+}
+
+.previewForm{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+/* Ensure all text elements have proper contrast */
+.register_page h1, 
+.register_page h2, 
+.register_page h3, 
+.register_page h4, 
+.register_page h5, 
+.register_page h6 {
+  color: var(--dark-text);
+  font-weight: 600;
+}
+
+.register_page p, 
+.register_page span, 
+.register_page div {
+  color: var(--medium-text);
+}
+
+.register_section h1, 
+.register_section h2, 
+.register_section h3, 
+.register_section h4, 
+.register_section h5, 
+.register_section h6 {
+  color: var(--dark-text);
+  font-weight: 600;
+}
+
+.register_section p, 
+.register_section span, 
+.register_section div {
+  color: var(--medium-text);
+}
+
+/* write media query for max-width medium screen */
+@media (max-width: 768px) {
+  .register_section {
+    width: 95%;
+  }
+  .link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0 !important;
+  }
+}
+
+.previewContainer {
+  font-family: "Montserrat", sans-serif;
+  color: var(--grey);
+  margin-bottom: 20px;
+}
+
+.previewItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.previewLabel {
+  flex: 1;
+  font-weight: bold;
+  color: var(--hot-pink);
+}
+
+.previewValue {
+  flex: 2;
+  margin-left: 20px;
+  color: var(--grey);
+}

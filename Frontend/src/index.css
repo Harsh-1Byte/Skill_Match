@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital@0;1&family=Oswald:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #FAE8E0;
+}
+
+:root {
+  --hot-pink: #EF7C8E;
+  --cream: #FAE8E0;
+  --spearmint: #B6E2D3;
+  --rosewater: #D8A7B1;
+  --dark-text: #2d2d2d;
+  --light-text: #ffffff;
+  --medium-text: #4a4a4a;
+  --basefont: "Oswald", sans-serif;
+  --secfont: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: var(--basefont);
+  background-color: var(--cream);
+  color: var(--dark-text);
+  text-align: center;
+}
+
+/* Global text color improvements for better visibility */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-text);
+  font-weight: 600;
+}
+
+p, span, div {
+  color: var(--medium-text);
+}
+
+/* Ensure proper contrast on light backgrounds */
+.light-bg {
+  color: var(--dark-text);
+}
+
+/* Ensure proper contrast on dark backgrounds */
+.dark-bg {
+  color: var(--light-text);
+}
+
+/* Ensure proper contrast on colored backgrounds */
+.hot-pink-bg {
+  color: var(--light-text);
+}
+
+.cream-bg {
+  color: var(--dark-text);
+}
+
+.spearmint-bg {
+  color: var(--dark-text);
+}
+
+.rosewater-bg {
+  color: var(--dark-text);
+}
+
+/* Additional text color utilities */
+.text-hot-pink {
+  color: var(--hot-pink);
+}
+
+.text-cream {
+  color: var(--cream);
+}
+
+.text-spearmint {
+  color: var(--spearmint);
+}
+
+.text-rosewater {
+  color: var(--rosewater);
+}
+
+.text-dark {
+  color: var(--dark-text);
+}
+
+.text-medium {
+  color: var(--medium-text);
+}
+
+.text-light {
+  color: var(--light-text);
+}
+
+::-webkit-scrollbar-track {
+  border: 5px solid var(--spearmint);
+  background-color: var(--spearmint);
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: var(--spearmint);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--hot-pink);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 0;
+  width: 0;
+  display: none;
+}
