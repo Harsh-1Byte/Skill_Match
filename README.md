@@ -1,12 +1,12 @@
- SkillSwap - Peer-to-Peer Learning Platform
+### SkillSwap - Peer-to-Peer Learning Platform
 
 
 
- Overview
+ ## Overview
 
 SkillSwap is a comprehensive MERN stack web platform designed to facilitate collaborative learning and skill development through peer-to-peer guidance. The platform emphasizes reciprocal knowledge exchange, industrial-grade security features, and user-friendly interfaces to create a dynamic learning environment where users can connect, learn from each other, and grow together.
 
- Motivation
+ ## Motivation
 
 In today's fast-paced world, the acquisition of new skills is essential for personal and professional growth. However, traditional learning methods often lack interaction and dynamism. SkillSwap was created to address this gap by providing a platform where users can:
 
@@ -16,7 +16,10 @@ In today's fast-paced world, the acquisition of new skills is essential for pers
 - **Build** meaningful professional relationships
 - **Grow** together in a supportive community
 
- Key Features
+  ## Concept Tree
+  <img width="1920" height="1080" alt="Concept Tree" src="https://github.com/user-attachments/assets/b9a59868-8666-421f-92ec-165147bd5884" />
+
+ ## Key Features
 
  Authentication & Security
 - **Google OAuth 2.0 Integration**: Secure login with Google accounts
@@ -72,7 +75,7 @@ In today's fast-paced world, the acquisition of new skills is essential for pers
 - **Admin Dashboard**: Comprehensive analytics for administrators
 - **Data Visualization**: Charts and graphs for insights
 
- Architecture
+ ### Architecture
 
 ### Frontend Architecture
 ```
@@ -116,7 +119,7 @@ Backend/
 │   └── app.js            # Express application setup
 ```
 
- Database Schema
+### Database Schema
 
 ### User Model
 - **Basic Info**: username, name, email, picture
